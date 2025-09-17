@@ -1,7 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  font-family: var(--font-family, 'IBM Plex Mono');
+  font-family: var(--font-family, "IBM Plex Mono");
   background-color: var(--bg-color);
   background-image: var(--bg-image);
   background-repeat: no-repeat;
@@ -10,6 +10,7 @@
   background-attachment: fixed;
 }
 
+/* header styles */
 .header {
   position: relative;
   display: grid;
@@ -56,7 +57,7 @@
   text-transform: uppercase;
 }
 
-.header__rec::after{
+.header__rec::after {
   content: "";
   position: absolute;
   top: 10px;
@@ -65,14 +66,14 @@
   height: 9px;
   border-radius: 50%;
   text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
-  background-color: var(--decorated-zone-color,#ff0070);
+  background-color: var(--decorated-zone-color, #ff0070);
 }
 
 .header__theme-menu {
   justify-self: end;
 }
 
-.header__theme-menu-list{
+.header__theme-menu-list {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -97,7 +98,7 @@
   outline: none;
 }
 
-.header__theme-menu-button:focus-visible{
+.header__theme-menu-button:focus-visible {
   border-block-end: 1px solid var(--accent-color, #ff0070);
   outline: none;
 }
@@ -114,7 +115,7 @@
   text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
 }
 
-.header__content{
+.header__content {
   color: #000028;
   font-weight: var(--title-weight, 700);
   font-size: var(--main-font-size, 18px);
