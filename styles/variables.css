@@ -2,10 +2,10 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
-:root{
-  --background-cover-image: url('../images/cover-image-dark.png');
+:root {
+  --background-cover-image: url("../images/cover-image-dark.png");
   --background-color: rgb(0, 0, 38);
-  --font-family-text: 'IBM Plex Mono', sans-serif;
+  --font-family-text: "IBM Plex Mono", sans-serif;
   --font-size-text: 18px;
   --decorated-zone-color: #ff0070;
   --accent-color: #ff0070;
