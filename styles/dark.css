@@ -1,6 +1,11 @@
 :root.theme-dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --background-cover-image: url('../images/cover-image-dark.png');
+  --background-color: rgb(0, 0, 38);
+  --main-title-color: #ff0070;
+  --accent-color: #ff0070;
+  --header-title-color: #db00ff;
+  --theme-button-color: #ff0070;
+  --theme-button-hover: rgba(255, 0, 112, 0.4);
+  --main-text-color: #f1b2ce;
+  --decorated-zone-color: #ff0070;
 }
