@@ -107,7 +107,7 @@
 }
 
 .title {
-  color: var(--header-title-color, #db00ff);
+  color: var(--header-title-color);
   font-weight: var(--font-weight-bold, 700);
   font-size: var(--mobile-font-size-clamp);
   line-height: 83%;
@@ -179,7 +179,7 @@
 
 .text-shadow {
   text-decoration: none;
-  text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 .main__special{
