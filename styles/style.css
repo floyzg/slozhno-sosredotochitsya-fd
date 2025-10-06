@@ -17,6 +17,7 @@
   justify-items: end;
   align-items: center;
   height: 100vh;
+  min-height: 668px;
   padding: 10px;
   background-image: var(--background-cover-image);
 }
@@ -183,6 +184,19 @@
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
+.text-shadow:focus {
+  outline: none;
+}
+
+.text-shadow:focus-visible {
+  outline: 1px solid currentColor;
+}
+
+.text-shadow:hover {
+border-bottom: 1px solid currentColor;
+  cursor: pointer;
+}
+
 .main__special {
   display: flex;
   flex-direction: column;
@@ -292,16 +306,43 @@
   text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
 }
 
+.theme-light .header__rec {
+    display: none;
+  }
+
+.theme-light .header__theme-menu-button:focus {
+    border-bottom: 1px solid var(--theme-button-color);
+  }
+
+.theme-light .header__theme-menu-button:focus-visible {
+    border-block-end: 1px solid var(--theme-button-color);
+  }
+
+.theme-light .header__theme-menu-button_active {
+    border: 1px solid var(--theme-button-color);
+  }
+
+
 @media (min-width: 768px) {
   .header {
     padding: 20px;
   }
 
+  .header__rec {
+    top: 20px;
+    right: 29px;
+    font-size: var(--font-size-text, 18px);
+    line-height: 25px;
+  }
+
+  .header__rec::after{
+    top: 10px;
+    right: 0;
+
+  }
+
   .title {
-    font-size: var(
-      --tablet-desktop-font-size-clamp,
-      clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem)
-    );
+    font-size: var(--tablet-desktop-font-size-clamp,clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem));
   }
 
   .header__title {
@@ -315,18 +356,6 @@
 
   .main__section {
     padding: 20px;
-  }
-
-  .header__rec {
-    top: 20px;
-    padding-right: 30px;
-  }
-
-  .header__rec::after {
-    content: "";
-    position: absolute;
-    top: 10px;
-    right: 10px;
   }
 
   .decorated-zone::before {
@@ -343,7 +372,7 @@
     gap: 40px;
   }
 
-  .main__section:nth-child(odd) {
+  .main__section_wide {
     grid-template-columns: 1fr 2fr;
     grid-auto-rows: repeat(auto-fill, 1fr);
   }
@@ -387,6 +416,6 @@
     grid-template-columns: repeat(3, 1fr);
   }
   .footer .title {
-    text-shadow: 2px 2px 0 #ff0070;
+    text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
   }
 }
