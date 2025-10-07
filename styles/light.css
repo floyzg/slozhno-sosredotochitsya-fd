@@ -8,6 +8,7 @@
   --theme-button-hover: rgba(50, 49, 45, 0.4);
   --main-text-color: #353430;
   --decorated-zone-color: #353430;
+  --display-rec: none;
 }
 
 @media (prefers-color-scheme: light) {
@@ -21,5 +22,6 @@
     --theme-button-hover: rgba(50, 49, 45, 0.4);
     --main-text-color: #353430;
     --decorated-zone-color: #353430;
+    --display-rec: none;
   }
 }
